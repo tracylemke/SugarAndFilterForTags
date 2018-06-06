@@ -5,8 +5,13 @@ Added a new type of filter ($and_in) with an AND condition between all tags pass
 The caviet of this solution is that when passing few tags to the request, the system might reach the database join limit imposed by the underlying technology. This solution works best with a handful of tags selected at most, as two additional joins are enforced for every tag passed
 For this reason, the API end of the solution imposes a hard limit of 5 tags (10 additional SQL joins)
 
-# Environment
+## Environment
 Sugar Enterprise 8.0.0 on MySQL
+
+## Installation
+* Clone the repository.
+* Run: `composer update` to retrieve the sugar-module-packager dependency.
+* Generate the installable .zip Sugar module with: `./vendor/bin/package <version number>`.
 
 ## API Call Example
 
