@@ -11,6 +11,7 @@ Sugar Enterprise 8.0.0 on MySQL
 ## Installation
 * Clone the repository.
 * Run: `composer update` to retrieve the sugar-module-packager dependency.
+* Modify the list of modules to enable the functionality on `configuration/templates.php`
 * Generate the installable .zip Sugar module with: `./vendor/bin/package <version number>`.
 
 ## API Call Example
